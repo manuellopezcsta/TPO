@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/../css/style.css">
+    <script src="https://kit.fontawesome.com/fd56d59322.js" crossorigin="anonymous"></script>
+    <script src="/../js/app.js"></script>
+    <!--Lo llamo antes del body para que funcionen los elementos que creo-->
+    <title>Display Case</title>
+</head>
+
+<body>
+    <!-- Seccion Header -->
+    <section class="header">
+        <div class="logo"></div>
+    </section>
+
+    <div class="mostrador">
+        <h2>Nombre Mascota</h2>
+        <p> Descripcion de la mascota.</p>
+        <img id =fotoMascota src="/images/buhos/buho1.jpg">
+        <br>
+        <a href="/../index.html" class="botonVolver">Volver</a>
+    </div>
+    
+    <!-- Seccion Footer Fijo -->
+    <section class="footer">
+        <a href="https://twitter.com/animalplctures?lang=es"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="https://www.facebook.com/groups/220165418007514/"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/dog_pictures/?hl=es"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="/pages/contact.html"> Contactanos</a>
+        <i class="fas fa-mobile-alt fa-2x"></i>
+        <i class="fas fa-tablet-alt fa-2x"></i>
+        <i class="fas fa-desktop fa-2x"></i>
+    </section>
+    <!-- Ejecuto el script para cargar la data-->
+    <script>
+        getPetData("n", "d", "url");
+    </script>
+</body>
+
+</html>

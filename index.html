@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fd56d59322.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <!--Lo llamo antes del body para que funcionen los elementos que creo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet"> 
+    <title>Pet Photos</title>
+
+</head>
+
+<body>
+    <!-- Seccion Header -->
+    <section class="header">
+        <div class="logo"></div>
+    </section>
+
+    <!-- Para la  SideBar-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#" onclick="menuSelection(this)" id="sec1">Perritos</a>
+        <a href="#" onclick="menuSelection(this)" id="sec2">Buhos</a>
+        <a href="#" onclick="menuSelection(this)" id="sec3">Gatos</a>
+        <a href="#" onclick="menuSelection(this)" id="sec4">Mapaches</a>
+        <a href="#" onclick="menuSelection(this)" id="sec5">EasterEgg</a>
+    </div>
+
+    <div id="main">
+        <button id="myMenuButton" class="openbtn" onclick="openNav()">☰ Menu</button>
+        <h2 id="categoria">Fotos de Buhos</h2>
+        <p>Haz click en una imagen para agrandarla y ver mas informacion.</p>
+        <div class="containerFlexbox">
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Pepito&d="Le+gusta+cantar"&url="/images/buhos/buho1.jpg"'>
+                    <img src="/images/buhos/buho1.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Alita&d="Le+gusta+volar+de+noche"&url="/images/buhos/buho2.jpg"'>
+                    <img src="/images/buhos/buho2.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Piquito&d="Adora+comer+ratones"&url="/images/buhos/buho3.jpg"'>
+                    <img src="/images/buhos/buho3.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Plumita&d="Le+encanta+dormir"&url="/images/buhos/buho4.jpg"'>
+                    <img src="/images/buhos/buho4.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Pichi&d="Suele+andar+en+solitario"&url="/images/buhos/buho5.jpg"'>
+                    <img src="/images/buhos/buho5.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Plumón&d="Le+encanta+volar"&url="/images/buhos/buho6.jpg"'>
+                    <img src="/images/buhos/buho6.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Chiquito&d="Es+un+carnivoro+voraz"&url="/images/buhos/buho7.jpg"'>
+                    <img src="/images/buhos/buho7.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Blanquita&d="Planea+silenciosamente"&url="/images/buhos/buho8.jpg"'>
+                    <img src="/images/buhos/buho8.jpg">
+                </a>
+            </div>
+            <div class="itemFlexbox">
+                <a href='/pages/display.html?n=Duque&d="Le+tiene+miedo+a+las+frutas"&url="/images/buhos/buho9.jpg"'>
+                    <img src="/images/buhos/buho9.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Seccion Footer Fijo -->
+    <section class="footer">
+        <a href="https://twitter.com/animalplctures?lang=es"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="https://www.facebook.com/groups/220165418007514/"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/dog_pictures/?hl=es"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="/pages/contact.html"> Contactanos</a>
+        <i class="fas fa-mobile-alt fa-2x"></i>
+        <i class="fas fa-tablet-alt fa-2x"></i>
+        <i class="fas fa-desktop fa-2x"></i>
+
+    </section>
+</body>
+
+</html>

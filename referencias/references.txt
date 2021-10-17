@@ -1,0 +1,6 @@
+-Sidebar
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar
+-Get data from URL 
+https://newbedev.com/get-parameters-from-url-code-example
+- Validacion
+https://getbootstrap.com/docs/4.0/components/forms/?#validation

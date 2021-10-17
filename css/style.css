@@ -1,0 +1,234 @@
+body{ /* Reseteo los margenes, para quitar el borde blanco q le da el navegador.*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: black;
+}
+.sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s; /* Transicion obligatoria hecha */
+    padding: 16px;
+    background-color: black;
+    color: white; /* Color titulo categoria y descripcion */
+    font-family: 'Scheherazade New', serif; /* La uso porque lo pide el tp.. pero me gusta
+    mas la times new roman x default del os */
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* Para el logo */
+
+  .logo{
+    background:url("../images/logo.png") no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+   }
+
+   .header{
+    height:100px;
+    background-color: blue; /* MANTENER ESTO y footer del mismo color */
+   }
+
+   /* Para el footer */
+   .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue; /* MANTENER ESTO y el logo principal del mismo color */
+    color: white;
+    text-align: center;
+   }
+   .footer > a {
+    text-decoration-line: none;
+    font-size: 150%;
+    color: white;
+   }
+   /* Iconos para ver el estado del query */
+   .footer > i.fas:nth-child(5){
+    display: none;
+   }
+   .footer > i.fas:nth-child(6){
+    display: none;
+  }
+  .footer > i.fas:nth-child(7){
+    display: none;
+  }
+
+   /* Para el flexbox principal */
+   .containerFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: auto;
+    align-content: start
+  }
+  .itemFlexbox {
+    flex: 1 1 auto;
+    margin: 10px;
+  }
+  .itemFlexbox img{
+    width: 25vw;
+    /*max-width: 25vw; */
+    height: auto;
+  }
+
+  
+  /* -1er corte 428 926 iphone 12/13 pro max o menor celu
+  -2ndo corte 1536 x 2048 nexus 9 o menor Tablet
+  -Mayor a eso pc 
+  Screen Resolution points tiene en mozilla. whut?*/
+
+  /* Media Query Mobile */
+  @media screen and (max-width: 428px) and (orientation: portrait) {
+    .header{
+      background-color: red;
+    }
+    .footer {
+      background-color: red;
+    }
+    .footer > fa fas fa-mobile-alt{
+      display: inline-block;
+    }
+    .footer > i.fas:nth-child(5){
+      display: inline-block;
+    }
+  }
+  /* MQ Tablet */
+  @media screen and (min-width: 429px) and (max-width: 1536px){
+    .header{
+      background-color: purple;
+    }
+    .footer {
+      background-color: purple;
+    }
+    .footer > fa fas fa-mobile-alt{
+      display: inline-block;
+    }
+    .footer > i.fas:nth-child(6){
+      display: inline-block;
+    }
+  }
+   /* MQ PC */
+   @media screen and (min-width: 1537px){
+    .header{
+      background-color: green;
+    }
+    .footer {
+      background-color: green;
+    }
+    .footer > i.fas:nth-child(7){
+      display: inline-block;
+    }
+  }
+
+  /* Para la segunda pagina */
+  .mostrador{
+    text-align: center;
+    color: white; /* Para el texto */
+  }
+  .mostrador img{
+    width: auto;
+    max-width: 75vw; 
+    height: auto;
+  }
+  .botonVolver {
+    margin-top: 25px;
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin-bottom: 50px; /* Para que sea vea el boton x si resizea */
+  }
+  .botonVolver:hover {
+    background-color:#5cbf2a;
+  }
+  .botonVolver:active {
+    position:relative;
+    top:1px;
+  }
+
+  /* Para la pagina de contacto */
+  .form-label{
+    color: white;
+  }
+  .form-check-label{
+    color: white;
+  }
+  .formularioContacto{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mapa{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+  }
+  .btn{
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  
