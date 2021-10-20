@@ -224,6 +224,7 @@ body{ /* Reseteo los margenes, para quitar el borde blanco q le da el navegador.
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 50px;
     color: white;
     text-align: center;
   }
