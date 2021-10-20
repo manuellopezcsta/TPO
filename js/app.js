@@ -64,13 +64,14 @@ function getPetData(nombre, desc, photoLoc) // Funcion para sacar los datos de l
     let petName = url.searchParams.get(nombre);
     let petDesc = url.searchParams.get(desc);
     let pic = url.searchParams.get(photoLoc);
-    // No puedo hacer que replace remueva los 2.. asi que lo hice asi
-    pic = pic.replace('"','');
-    pic = pic.slice(0, -1);
+    console.log("Pre remplazo " +pic);
+    pic = pic.replaceAll('"',''); // Gracias Ale!
     // Aplicamos los datos
     document.getElementsByClassName("mostrador")[0].querySelector("h2").textContent = petName;
     document.getElementsByClassName("mostrador")[0].querySelector("p").textContent = petDesc;
     document.getElementsByClassName("mostrador")[0].querySelector("img").src = pic;
+
+    // Metodo alternativo prodria ser usando LOCAL STORAGE como dijo Ale.
 }
 
 // Arrays con la data de las imagenes
